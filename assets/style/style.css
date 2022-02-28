@@ -1,1 +1,26 @@
-/* BASIC STYLES HERE */
+.row{
+ height: 50vh;
+}
+.content:hover + .hide {
+    display: block;
+    
+  }
+
+  .hide {
+    display: none;
+  }
+  .clock{
+      font-size: 180px;
+      font-weight: 400;
+  }
+
+  .quote{
+      font-size: 18px;
+      font-weight: 600;
+      font-style: italic;
+      
+  }
+  .card{
+      opacity: 45%;
+      
+  }

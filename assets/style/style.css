@@ -1,26 +1,45 @@
-.row{
- height: 50vh;
+.row {
+    height: 50vh;
 }
-.content:hover + .hide {
+
+.content:hover+.hide {
     display: block;
-    
-  }
 
-  .hide {
+}
+
+.hide {
     display: none;
-  }
-  .clock{
-      font-size: 180px;
-      font-weight: 400;
-  }
+}
 
-  .quote{
-      font-size: 18px;
-      font-weight: 600;
-      font-style: italic;
-      
-  }
-  .card{
-      opacity: 45%;
-      
-  }
+.clock {
+    font-size: 140px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+
+}
+
+.quote {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card {
+    border: none;
+    color: rgb(1, 2, 2);
+
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    font-size: 30px;
+    color: aliceblue;
+}

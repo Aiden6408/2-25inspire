@@ -1,4 +1,5 @@
 import { ProxyState } from "../AppState.js";
+import { Picture } from "../Models/ImageModel.js";
 import { sandboxapi } from "./AxiosService.js";
 
 
@@ -11,8 +12,8 @@ export class ImageService {
     async getimage() {
 
         const res = await sandboxapi.get('images')
-        ProxyState.image = new Image(res.data)
         console.log(res.data)
+        ProxyState.test = new Picture(res.data)
 
     }
 }

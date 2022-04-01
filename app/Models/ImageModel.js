@@ -2,9 +2,9 @@
 
 
 
-export class Image {
+export class Picture {
     constructor(data) {
-        this.url = data.Proxystate.image.largeImgUrl
+        this.url = data.largeImgUrl
 
     }
 

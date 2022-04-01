@@ -15,13 +15,13 @@ export class ClockController {
 
         if (m >= 10) {
             let currenttime = `
-                <div class="clock">${h}:${m}</div>
-                `
+                    <div class="clock">${h}:${m}</div>
+                    `
             document.getElementById("time").innerHTML = currenttime;
             if (m < 10) {
                 let currenttime = `
-                <div class="clock">${h}:0${m}</div>
-                `
+                    <div class="clock">${h}:0${m}</div>
+                    `
 
 
 

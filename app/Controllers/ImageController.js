@@ -3,12 +3,8 @@ import { imageService } from "../Services/ImagesService.js"
 
 
 function _drawImage() {
-    console.log(ProxyState.image)
-    // document.getElementById('body').style.backgroundImage = `url('${ProxyState.image}')`
-
-
-
-
+    console.log(ProxyState.test)
+    document.body.style.backgroundImage = `url('${ProxyState.test.url}')`
 
 
 }
@@ -17,7 +13,7 @@ function _drawImage() {
 
 export class ImageController {
     constructor() {
-        ProxyState.on('image', _drawImage)
+        ProxyState.on('test', _drawImage)
         this.getimage()
         console.log("image controller")
 
@@ -29,6 +25,7 @@ export class ImageController {
         } catch (error) {
             console.error(error)
         }
+
     }
 
 
